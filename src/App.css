@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic');
+.container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .flex-origin {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  header {
+    background-color: #1f1f20;
+    padding: 10px 1px;
+  }
+  
+  .logo {
+    color: #8cc054;
+    font-size: 40px;
+    margin: 0 10px;
+  }
+  
+  .logo-text {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .jus-space {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .data {
+    color: #fff;
+  }
+  
+  section {
+    padding: 20px 1px;
+    padding-bottom: 0px;
+  }
+  
+  .humans {
+    margin: 10px 0;
+    width: 50%;
+    padding: 10px 1px;
+    border-radius: 10px;
+    background-color: #e2e2e2;
+  }
+  
+  .humans-message {
+    margin-left: 10px;
+  }
+  
+  .contacts-photo {
+    background-image: url(./img/human.jpg);
+    height: 75px;
+    width: 75px;
+  }
+  
+  .like {
+    background-image: url(./img/like.svg);
+    height: 25px;
+    width: 25px;
+    margin-left: auto;
+  }
+  
+  .like:hover {
+    cursor: pointer;
+  }
+  
+  .like:active {
+    cursor: pointer;
+    background-image: url(./img/like-click.svg);
+  }
+  
+  .human-container {
+    width: 98%;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .function {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  h2 {
+    line-height: 0px;
+    color: #8cc054;
+  }
+  
+  .humans-data {
+    font-size: 15px;
+    color: grey;
+  }
+  
+  .my-message {
+    margin-left: auto;
+    background-color: #4b4d4a;
+  }
+  
+  .my-message p {
+    color: #fff;
+  }
+  
+  .message-input {
+    padding: 20px 1px;
+    background-color: #e2e2e2;
+  }
+  
+  .message-send-div {
+    width: 80%;
+  }
+  
+  .message-send-div input {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 10px;
+    margin-left: -15px;
+  }
+  
+  .message-send-div input {
+    outline: none;
+  }
+  
+  .submit {
+    width: 20%;
+  }
+  
+  .submit button {
+    border: none;
+    border-radius: 10px;
+    background-color: #8cc054;
+    color: #fff;
+    font-size: 30px;
+    margin-top: -5px;
+    width: 100%;
+    height: 60px;
+  }
+  
+  .submit button:focus {
+    cursor: pointer;
+    outline: none;
+    background-color: #b3df84;
+  }
+  
+  .submit button:hover {
+    background-color: #b3df84;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #1f1f20;
+    color: #fff;
+    padding: 15px 1px;
+  }
+  
+  .footer-flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  ul {
+    width: 25%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  li {
+    display: block;
+  }
+  
+  li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .Copyright {
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 850px) {
+    footer ul {
+      width: 35%;
+      display: block;
+    }
+    footer ul a {
+      text-align: center;
+    }
+    footer ul li {
+      margin: 0 auto;
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 660px) {
+    header .flex {
+      display: block;
+      text-align: center;
+    }
+    .humans {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    footer ul {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .container {
+      width: 95%;
+    }
+    footer ul {
+      width: 75%;
+    }
+    .submit button {
+      font-size: 25px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .container {
+      width: 99%;
+    }
+    body {
+      overflow-x: hidden;
+    }
+  }
+.like span{
+  margin-left: -20px;
+}
+  /*# sourceMappingURL=main.css.map */
